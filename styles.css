@@ -1,0 +1,46 @@
+.body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.header{
+    background-image: url('https://miro.medium.com/max/4000/1*m9IJdAYW04MYh75ivpwUNA.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 94.5vh;
+    border-image-width: auto;
+}
+.header h1{
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 4px white;
+    padding: 5px;
+    font-size: 3em;
+    border-radius:5px;
+}
+.header button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    transform:translateX(240%) translateY(1050%);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header button:hover{
+    background-color: #45a049;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: translateX(240%) translateY(1000%) scale(1.05);
+}
+.header footer{
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    margin-top: 520px;
+}

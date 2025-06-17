@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="path-to-icon">
+    <title>ChatBot Interface</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: auto;
+            position: relative;
+        }
+
+        #chatbox {
+            height: 420px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 4px;
+            background-image: url('https://chatgen.ai/wp-content/uploads/2023/04/AI-chat-5-1200x675.png');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+            width: 800px;
+            position: relative;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 18px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 4px;
+        }
+
+        .bot-message {
+            background-color: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 4px;
+        }
+
+        #userInput {
+            width: 700px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+
+        #sendButton {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transform: translateX(10%) translateY(-10%);
+        }
+
+        #sendButton:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #LogoutButton {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: #f44336;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+
+    #LogoutButton:hover {
+        background-color: #d32f2f;
+    }
+        @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+            .chat-container {
+                max-width: 100%;
+                padding: 8px;
+            }
+            #chatbox {
+                width: 100%;
+                height: 320px;
+                padding: 5px;
+                font-size: 14px;
+            }
+            #userInput {
+                width: 60vw;
+                min-width: 100px;
+                font-size: 14px;
+                padding: 8px;
+            }
+            #sendButton {
+                padding: 8px 14px;
+                font-size: 14px;
+                transform: none;
+                margin-top: 8px;
+            }
+             #LogoutButton {
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+    }
+        
+    </style>
+    <div class="chat-container">
+        <h1>Chat with Us</h1>
+        <div id="chatbox"></div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+    </div>
+    <footer>
+        <button id="LogoutButton">Logout</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
